@@ -29,6 +29,48 @@ a {
   text-decoration: none;
 }
 
+/*HolyGrail css start*/
+
+.HolyGrail,
+.HolyGrail-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.HolyGrail-nav {
+  order: -1;
+}
+
+.HolyGrail-content {
+  flex: 1;
+}
+
+.HolyGrail-nav, .HolyGrail-ads {
+  /* 12em is the width of the columns */
+  flex: 0 0 12em;
+}
+
+.HolyGrail-ads {
+  /* 12em is the width of the columns */
+  padding-right: 40px;
+}
+
+@media all and (orientation: landscape) {
+  .HolyGrail-body {
+    flex-direction: row;
+    flex: 1;
+  }
+  .HolyGrail-content {
+    flex: 1;
+  }
+  .HolyGrail-nav, .HolyGrail-ads {
+    /* 12em is the width of the columns */
+    flex: 0 0 12em;
+  }
+}
+
+/*HolyGrail css end*/
+
 .main-header {
   flex: 0 1 auto;
 }
