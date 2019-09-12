@@ -3,10 +3,10 @@ var DETAIL_TITLE_SELECTOR = '[data-image-role="title"]';
 var THUMBNAIL_LINK_SELECTOR = '[data-image-role="trigger"]';
 
 function setDetails(imageUrl, titleText) {
+  'use strict';
 
   resetStandardOtterThumbnailUrls();
 
-  'use strict';
   var detailImage = document.querySelector(DETAIL_IMAGE_SELECTOR);
   detailImage.setAttribute('src', imageUrl);
 
